@@ -73,7 +73,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -112,7 +113,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -9054,14 +9056,72 @@
   },
   "networks": {
     "5777": {
-      "events": {},
+      "events": {
+        "0x6549102bed7d1bb5ec529ee14e2ca60ffc1f47f66d4cc6ca713220613cc64c25": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "bool",
+              "name": "done",
+              "type": "bool"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "createdAt",
+              "type": "uint256"
+            }
+          ],
+          "name": "TaskCreated",
+          "type": "event"
+        },
+        "0x389dee00d487dd41dd5bf0f43eeaa5b663b3af022d52368df89d388150295f45": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "bool",
+              "name": "done",
+              "type": "bool"
+            }
+          ],
+          "name": "TaskToggleDone",
+          "type": "event"
+        }
+      },
       "links": {},
-      "address": "0x813aaCB0f39F29638eE65F7925b920315a6a8116",
-      "transactionHash": "0xbaa2c64aaf64e79b54216bb8b0f1bc7767f85b4311e3236ac65adb921dfdc798"
+      "address": "0xf8B4c598531DF03cee39C59Ad54F491ca44Db209",
+      "transactionHash": "0xe6b2e835912578e87f7b95fdec47ec3457ee9e20bf5bacfdc47651044477b307"
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-03-01T14:45:50.130Z",
+  "updatedAt": "2022-03-01T19:06:00.281Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
